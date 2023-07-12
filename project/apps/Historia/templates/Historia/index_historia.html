@@ -1,0 +1,31 @@
+{% extends 'Home/index_home.html' %}
+{% load static %}
+
+{% block CONTENIDO %}
+
+<section class="page-section about-heading">
+    <div class="container"><center>
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'Home/assets/img/personajes.jpg' %}" alt="..." /></center>
+    </div>
+</section>
+<section>
+    {% for personaje in historias %}
+    
+        <div class="about-heading-content">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 mx-auto">
+                    <div class="bg-faded rounded h1-5">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper"><br>{{ personaje.faccion }}</span>
+                            <span class="section-heading-lower">{{ personaje.nombre }}</span>
+                        </h2>
+                        <p> {{ personaje.historia }}<br> </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    
+</section>
+
+{% endblock CONTENIDO %}

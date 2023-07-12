@@ -7,12 +7,19 @@ class Pais(models.Model):
 
     def __str__(self) -> str:
         return self.nombre
+    class Meta:
+        verbose_name = "País"
+        verbose_name_plural = "Países"
     
 class Ciudad(models.Model):
     nombre = models.CharField(max_length=50, unique=True)
 
     def __str__(self) -> str:
         return self.nombre
+    
+    class Meta:
+        verbose_name = "Ciudad"
+        verbose_name_plural = "Ciudades"
 
 class Lugar(models.Model):
     nombre = models.CharField(max_length=50)
