@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from .models import Juego
 
 # Create your views here.
 def home(request):
-    return render(request, "Juegos/index_juegos.html")
+    registro_juegos = Juego.objects.all()
+    contexto = {"Juegos":registro_juegos}
+    return render(request, "Juegos/index_juegos.html",contexto)
