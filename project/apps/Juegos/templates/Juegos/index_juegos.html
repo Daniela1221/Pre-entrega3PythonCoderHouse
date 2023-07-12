@@ -1,0 +1,16 @@
+{% extends 'Home/index_home.html' %}
+
+{% block BASE_CONTENIDO_2 %}
+
+    {% include 'Juegos/tarjeta_derecha.html' with sobretitulo="direccion web" titulo="Nombre Juego" 
+descripcion="Características del juego" foto='Home/assets/img/products-01.jpg' %}
+
+    {% include 'Juegos/tarjeta_izquierda.html' %} 
+    <!-- La anterior tiene las mismas claves, poner contenido creado en admin -->
+    
+{% endblock BASE_CONTENIDO_2 %}
+
+
+
+
+
