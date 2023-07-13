@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'Libreria',
     'Lugares',
     'Subscripcion',
+    'series_peliculas',
 ]
 
 MIDDLEWARE = [

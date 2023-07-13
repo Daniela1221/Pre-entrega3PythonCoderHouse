@@ -25,5 +25,6 @@ urlpatterns = [
     path("libreria/", include("Libreria.urls")),
     path("lugares/", include("Lugares.urls")),
     path("subscribete/", include("Subscripcion.urls")),
+    path("series_peliculas/", include("series_peliculas.urls")),
 
 ]
