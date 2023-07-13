@@ -3,7 +3,7 @@
 Este proyecto se pasará con link directo de la plataforma de GitHub.
 Para bajar la información del proyecto, copiar el url y escribir en la consola de Visual Studio Code (dentro del directorio deseado):
 
-**`git clone linkGitHuB`**
+**`git clone https://github.com/Daniela1221/Pre-entrega3PythonCoderHouse.git`**
 
 Asegurarse que el link termine en .git
 
